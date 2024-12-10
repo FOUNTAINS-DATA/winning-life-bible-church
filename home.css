@@ -1,0 +1,250 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  max-width: 100%;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.exo-2-uniquifier {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+body{
+background-color: black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ height: 100%;
+ width: 100%;
+ max-width: 100%;
+ min-width: 100%;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ font-family: georgia; 
+}
+.active{
+  color: red;
+}
+.logo{
+  position: absolute;
+  border-radius: 50%;
+  width: 10%;
+  height: 200%;
+  left: 10%;
+}
+header{
+  position: fixed;
+  background: linear-gradient(rgb(233, 235, 247)0%, rgb(98, 140, 196)99%);
+  opacity: 100%;
+  display: flex;
+  right: 0%;
+  place-content: right;
+  place-items: right;
+  z-index: 99;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  padding: 10px 500px;
+}
+
+.top p{
+  position: absolute;
+   top: 9rem;
+   font-size: 35px;
+   font-family: cursive;
+   font-weight: 600;
+   color: #fff;
+}
+.logo img{
+width: 10%;
+ height: 5%;
+         position: absolute;
+          left: 3%;
+          top: -45rem;
+          border-radius: 50%;
+          cursor: pointer;
+}
+ul{
+  list-style: none;
+  position: relative;
+  right: -5rem;
+}
+ul li{
+  display: inline-block;
+  position: relative;
+}
+ul li a{
+  display: block;
+  padding: 20px 25px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 19px;
+}
+/* Responsive Design */
+
+@media only screen and (max-width: 768px){
+  /* Add styles for smaller screens */
+  body{
+    background-image: url(images/IMG-20221112-WA0004.jpg);
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+  .logo{
+    position: absolute;
+    width: 13%;
+    height: 210%;
+    left: 50rem;
+    top: 5rem;
+  }
+  ul{
+    list-style: none;
+    position: relative;
+    right: -5rem;
+  }
+  ul li{
+    display: inline-block;
+    position: relative;
+  }
+  ul li a:hover{
+    background: yellowgreen;
+    width: 100%;
+    height: fit-content;
+  }
+  ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 19px;
+    transition: .4s;
+  }
+  li .active{
+    position: absolute;
+    top: -1.5rem;
+  }
+  li .media{
+    position: absolute;
+    top: -2.5rem;
+    left: 6rem;
+  }
+  li .mission{
+    position: absolute;
+    top: -3.5rem;
+    left: 12rem;
+  }
+  li .about{
+    position: absolute;
+    top: -4.5rem;
+    left: 18rem;
+  }
+  
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Add styles for medium screens */
+  body{
+    background-image: url(cool2.jpg);
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+  ul{
+    list-style: none;
+    position: relative;
+    right: -5rem;
+  }
+  ul li{
+    display: inline-block;
+    position: relative;
+  }
+  ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 19px;
+  }
+  li .active{
+    position: absolute;
+    top: -1.5rem;
+  }
+  li .media{
+    position: absolute;
+    top: -2.5rem;
+    left: 6rem;
+  }
+  li .mission{
+    position: absolute;
+    top: -3.5rem;
+    left: 12rem;
+  }
+  li .about{
+    position: absolute;
+    top: -4.5rem;
+    left: 18rem;
+  }
+  
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+  /* Add styles for larger screens */
+  body{
+    background-image: url(cool3.jpg);
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+  ul{
+    list-style: none;
+   
+    position: relative;
+    right: -5rem;
+  }
+  ul li{
+    display: inline-block;
+    position: relative;
+  }
+  ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 19px;
+  }
+  li .active{
+    position: absolute;
+    top: -1.5rem;
+  }
+  li .media{
+    position: absolute;
+    top: -1.5rem;
+    left: 6rem;
+  }
+  li .mission{
+    position: absolute;
+    top: -1.5rem;
+    left: 12rem;
+  }
+  li .about{
+    position: absolute;
+    top: -1.5rem;
+    left: 18rem;
+  }
+  
+}
