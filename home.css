@@ -16,7 +16,7 @@
   font-style: normal;
 }
 body{
-background-color: black;
+background: black; 
  display: flex;
  justify-content: center;
  align-items: center;
@@ -55,15 +55,6 @@ header{
   height: 10%;
   padding: 10px 500px;
 }
-
-.top p{
-  position: absolute;
-   top: 9rem;
-   font-size: 35px;
-   font-family: cursive;
-   font-weight: 600;
-   color: #fff;
-}
 .logo img{
 width: 10%;
  height: 5%;
@@ -71,7 +62,6 @@ width: 10%;
           left: 3%;
           top: -45rem;
           border-radius: 50%;
-          cursor: pointer;
 }
 ul{
   list-style: none;
@@ -90,27 +80,133 @@ ul li a{
   text-align: center;
   font-size: 19px;
 }
+
+/* give online and plan to attend buttons*/
+ .butt button{
+  position: relative;
+  padding: 15px 15px;
+  outline: 0;
+  border: 0;
+ cursor: pointer;
+ margin-top: 20rem;
+ margin-left: 30px;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  transition: .4s;
+}
+.butt button:hover{
+  background: white;
+  color: red;
+}
+.home{
+  position: absolute;
+  top: 36rem;
+  width: 100%;
+  height: 456%;
+  background: rgb(255, 254, 254);
+  font-size: 20px;
+  font-family: georgia; 
+}
+.home .add{
+  position: absolute;
+  top: 1.2%;
+  left: 4%;
+}
+.home .phone{
+  position: absolute;
+  top: 1.5%;
+  right: 27%;
+}
 /* Responsive Design */
 
 @media only screen and (max-width: 768px){
   /* Add styles for smaller screens */
   body{
-    background-image: url(images/IMG-20221112-WA0004.jpg);
+    background: black;
     background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
+  }
+marquee{
+  position: absolute;
+  top: 5rem;
+  
+}
+.slider .img-box{
+  font-family: georgia; 
+  position: absolute;
+  display: flex;
+  top: 3.7%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .img-box .slider-img{
+  position: relative;
+  top: -5rem;
+  width: 100%;
+  height: 110%;
+  margin-bottom: 40px;
+  opacity: 100%;
+  padding: 4px;
+  margin: 0;
+  padding: 0;
+}
+ .slider .img-box::before{
+  content: '';
+  position: absolute;
+  top: -4%;
+  width: 100%;
+  height: 111%;
+  background-color: rgb(0, 0, 0, 0.6)
+}
+.slider a.btn{
+  position: absolute;
+  justify-content: space-between;
+  left: 8.5%;
+  outline: 0;
+  top: 11rem;
+  color:#ff0000;
+  font-size: 3rem;
+  font-weight:800;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.slider a.btnn{
+  position: absolute;
+  justify-content: space-between;
+  left: 90%;
+  top: 11rem;
+  outline: 0;
+  color:#ff0000;
+  font-size: 3rem;
+  font-weight:800;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.slider a:hover{
+  color: rgb(255, 255, 255);
+  outline: 0;
+  outline: 2px solid rgb(136, 0, 0);
+}
+  .back {
+    display: none;
   }
   .logo{
     position: absolute;
     width: 13%;
     height: 210%;
-    left: 50rem;
+    left: 53rem;
     top: 5rem;
   }
   ul{
     list-style: none;
     position: relative;
-    right: -5rem;
+    right: -7rem;
   }
   ul li{
     display: inline-block;
@@ -133,23 +229,169 @@ ul li a{
   li .active{
     position: absolute;
     top: -1.5rem;
+    font-size: 19px;
+    font-weight: 100;
+    left: 4rem;
   }
   li .media{
     position: absolute;
     top: -2.5rem;
-    left: 6rem;
+    left: 8.5rem;
   }
   li .mission{
     position: absolute;
     top: -3.5rem;
-    left: 12rem;
+    left: 13rem;
   }
   li .about{
     position: absolute;
     top: -4.5rem;
     left: 18rem;
   }
-  
+  .home .add{
+    position: absolute;
+    top: 0.5%;
+    left: 0%;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  .home .phone{
+    position: absolute;
+    top: 1.8%;
+    left: 16%;
+    font-size: 13px;
+  }
+  .sun{
+    display:none;
+  }
+  .butt button{
+    position: relative;
+    padding: 15px 15px;
+    outline: 0;
+    border: 0;
+   cursor: pointer;
+   left: 0;
+   margin-top: 20rem;
+   margin-left: 10px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    transition: .4s;
+  }
+  .visit{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    left: 0;
+    top: 41rem;
+    background: yellowgreen;
+    overflow: hidden;
+  }
+  .container{
+   position: absolute;
+background-color: #000;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 95%;
+   height: 80%;
+   top: 10%;
+   border-radius: 30px;
+   left: 2.5%;
+
+ }
+ .container button{
+  position: absolute;
+  padding: 10px 40px;
+  background: red;
+  border-radius: 20px;
+  top: 10rem;
+  outline: 0;
+  left: 15%;
+  border: 0;
+  text-decoration: none;
+  transition: .4s;
+ }
+ .container button:hover{
+  background: linear-gradient(314deg, rgb(1, 39, 145)30% , rgb(3, 116, 8)50% );
+  color: white;
+ }
+ .container .wrapper{
+   border-radius: 30px;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   margin: 5rem auto;
+   overflow: hidden;
+   top: -28%;
+   right: -34%;
+   cursor: pointer;
+   left: 0;
+ }
+ .container .wrapper-holder{
+   opacity: 100%;
+   display: grid;
+   grid-template-columns:  repeat(6, 100%);
+   height: 100%;
+   width: 100%;
+   animation: slider 30s ease-in-out infinite alternate;
+ }
+ .container #slider-img-1{
+   background-image: url(images/IMG-20221128-WA0002.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+ .container #slider-img-2{
+   background-image: url(images/IMG-20221112-WA0004.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+ .container #slider-img-3{
+   background-image: url(images/IMG-20221112-WA0003.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+ .container #slider-img-4{
+   background-image: url(images/dad3.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+ .container #slider-img-5{
+   background-image: url(images/dad2.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+ .container #slider-img-6{
+   background-image: url(images/dad.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+ 
+ 
+ @keyframes slider{
+   0%{transform: translateX(0%);}
+   10%{transform: translateX(-100%);}
+   20%{transform: translateX(-100%);}
+   30%{transform: translateX(-200%);}
+   40%{transform: translateX(-200%);}
+   50%{transform: translateX(-300%);}
+   60%{transform: translateX(-300%);}
+   70%{transform: translateX(-400%);}
+   80%{transform: translateX(-400%);}
+   90%{transform: translateX(-500%);}
+   100%{transform: translateX(-500%);}
+ }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -159,6 +401,10 @@ ul li a{
     background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
+  }
+  marquee{
+    position: absolute;
+    top: 9rem;
   }
   ul{
     list-style: none;
