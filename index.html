@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!--nav- bar set to fixed-->
     <header>
+        <marquee behavior="" direction="" style="color: rgb(145, 145, 145); left: 0; width: 100%; position: absolute;">WELCOME TO WINNING LIFE BILBE CHURCH</marquee>
          <img src="images/Retouch_20241018_160117602.png" alt="our logo" class="logo"> 
         <ul>
             <li><a href="#" class="active">Home</a></li>
@@ -17,8 +19,58 @@
             <li><a href="#" class="about">About</li>
             
         </ul>
-       
+      
         
-    </header>     
+    </header>
+    <div class="slider">
+        <div class="img-box" alt="">
+            <img src="images/the church.jpg" alt="sunday" class="slider-img" >
+            <!-- Next and Previous button -->
+        <a class="btn" onclick="prev()">&#10094; </a>
+        <a class="btnn" onclick="next()">&#10095;</a>
+        </div> 
+        <div class="butt">
+            <a href="#"><button>Plan To Attend</button></a>
+            <a href="#"><button>Give Online</button></a>  
+        </div>
+    </div>
+     <img src="images/the church.jpg" alt="" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" class="back">
+
+     <!--donate and plan to attend button--> 
+
+    <div class="home">
+        <div class="add">
+            <p><img src="images/map.png" width="5%" height="40%" style="position: relative; left: -0.1rem; top: 0.5rem; ">KLM 4 NEW UMUAHIA ROAD | OGBOR HILL ABA, ABIA STATE</p>
+        </div>
+        <div class="phone">
+            <p><img src="images/cal.png" width="6%" height="40%" style="position: relative; left: -0.5rem; top: 0.3rem; ">08032925010 | 08033457869</p>
+        </div>
+        <div class="sun">  
+            <img src="images/IMG-20221112-WA0004.jpg" width="100%" height="-12rem" style="position: relative; top: 5.2rem; cursor: pointer;">
+            <marquee behavior="" direction="left"><p>PROPHETIC PUSH-UP SERVICE</p></marquee>
+            
+       
+       
+
+        </div>
+        </div> 
+          <div class="visit">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="wrapper-holder">
+                        <div id="slider-img-1"></div>
+                        <div id="slider-img-2"></div>
+                        <div id="slider-img-3"></div>
+                        <div id="slider-img-4"></div>
+                        <div id="slider-img-5"></div>
+                        <div id="slider-img-6"></div>
+                       
+                    </div>
+              </div>
+            <a href="#">  <button>VISIT OUR SERVICES</button></a>
+               </div>
+          </div>
+          
     </body>
+    <script src="script.js"></script>
 </html>
