@@ -80,6 +80,66 @@ ul li a{
   text-align: center;
   font-size: 19px;
 }
+.slider .img-box{
+  font-family: georgia; 
+  position: absolute;
+  display: flex;
+  top: 3.7%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .img-box .slider-img{
+  position: relative;
+  top: -5rem;
+  width: 100%;
+  height: 110%;
+  margin-bottom: 40px;
+  opacity: 100%;
+  padding: 4px;
+  margin: 0;
+  padding: 0;
+}
+ .slider .img-box::before{
+  content: '';
+  position: absolute;
+  top: -4%;
+  width: 100%;
+  height: 111%;
+  background-color: rgb(0, 0, 0, 0.6)
+}
+.slider a.btn{
+  position: absolute;
+  justify-content: space-between;
+  left: 8.5%;
+  outline: 0;
+  top: 11rem;
+  color:#ff0000;
+  font-size: 3rem;
+  font-weight:800;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.slider a.btnn{
+  position: absolute;
+  justify-content: space-between;
+  left: 90%;
+  top: 11rem;
+  outline: 0;
+  color:#ff0000;
+  font-size: 3rem;
+  font-weight:800;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.slider a:hover{
+  color: rgb(255, 255, 255);
+  outline: 0;
+  outline: 2px solid rgb(136, 0, 0);
+}
 
 /* give online and plan to attend buttons*/
  .butt button{
@@ -101,7 +161,7 @@ ul li a{
 }
 .home{
   position: absolute;
-  top: 36rem;
+  top: 50rem;
   width: 100%;
   height: 456%;
   background: rgb(255, 254, 254);
@@ -110,13 +170,104 @@ ul li a{
 }
 .home .add{
   position: absolute;
-  top: 1.2%;
+  top: 0.5%;
   left: 4%;
 }
 .home .phone{
   position: absolute;
-  top: 1.5%;
+  top: 0.7%;
   right: 27%;
+}
+
+img.img1{
+  position: absolute;
+  left: 0;
+  top: 110rem;
+  width: 100vw;
+  height: 50vw;
+}
+.rain{
+  position: absolute;
+  left: 0;
+  top: 110rem;
+  width: 100vw;
+  height: 50vw;
+   background: url(images/rain.png);
+   animation: rain .3s linear infinite;
+}
+.rain::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  animation: lighting.3s linear infinite;
+  opacity: 0;
+}
+@keyframes rain {
+  0%{
+    background-position: 0% 0%;
+  }
+  100%{
+    background-position: 100% 100%;
+  }
+}
+@keyframes lighting {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 0;
+  }
+  11%{
+    opacity: 1;
+  }
+  14%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  21%{
+    opacity: 0;
+  }
+  24%{
+    opacity: 0;
+  }
+  104%{
+    opacity: 0;
+  }
+}
+.loader{
+  position: absolute;
+top: 50%;
+left: 40%;
+transform: translate(-50%,-50%);
+}
+.loader h1{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 4em;
+  color: rgba(255, 255, 255, .1);
+  background-image: url(images/AdobeStock_456102510_Preview.jpeg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite;
+}
+@keyframes animate{
+  0%{
+    background-position: left 0px top 80px;
+  }
+  40%{
+    background-position: left 800px top -50px;
+  }
+  80%{
+    background-position: left 1800px top -50px;
+  }
+  100%{
+    background-position: left 2400px top 80px;
+  }
 }
 /* Responsive Design */
 
@@ -198,7 +349,7 @@ marquee{
   }
   .logo{
     position: absolute;
-    width: 13%;
+    width: 15%;
     height: 210%;
     left: 53rem;
     top: 5rem;
@@ -231,12 +382,12 @@ marquee{
     top: -1.5rem;
     font-size: 19px;
     font-weight: 100;
-    left: 4rem;
+    left: 5rem;
   }
   li .media{
     position: absolute;
     top: -2.5rem;
-    left: 8.5rem;
+    left: 9rem;
   }
   li .mission{
     position: absolute;
@@ -248,6 +399,15 @@ marquee{
     top: -4.5rem;
     left: 18rem;
   }
+  .home{
+    position: absolute;
+    top: 35rem;
+    width: 100%;
+    height: 456%;
+    background: rgb(255, 254, 254);
+    font-size: 20px;
+    font-family: georgia; 
+  }
   .home .add{
     position: absolute;
     top: 0.5%;
@@ -258,7 +418,7 @@ marquee{
   .home .phone{
     position: absolute;
     top: 1.8%;
-    left: 16%;
+    left: 13%;
     font-size: 13px;
   }
   .sun{
@@ -289,7 +449,6 @@ marquee{
   }
   .container{
    position: absolute;
-background-color: #000;
    background-size: cover;
    background-repeat: no-repeat;
    width: 95%;
@@ -392,6 +551,63 @@ background-color: #000;
    90%{transform: translateX(-500%);}
    100%{transform: translateX(-500%);}
  }
+
+ img.img1{
+  position: absolute;
+  left: 0;
+  top: 65rem;
+  width: 100vw;
+  height: 50vw;
+}
+.rain{
+  position: absolute;
+  left: 0;
+  top: 65rem;
+  width: 100vw;
+  height: 50vw;
+   background: url(images/rain.png);
+   animation: rain .3s linear infinite;
+}
+.rain::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  animation: lighting.3s linear infinite;
+  opacity: 0;
+}
+.loader{
+  position: absolute;
+top: 50%;
+left: 50%;
+
+}
+.loader h1{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 184%;
+  color: rgba(255, 255, 255, .1);
+  background-image: url(images/AdobeStock_456102510_Preview.jpeg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite;
+}
+@keyframes animate{
+  0%{
+    background-position: left 0px top 80px;
+  }
+  40%{
+    background-position: left 800px top -50px;
+  }
+  80%{
+    background-position: left 1800px top -50px;
+  }
+  100%{
+    background-position: left 2400px top 80px;
+  }
+}
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
